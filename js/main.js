@@ -157,7 +157,7 @@ $(document).ready(function() {
     {top: "4999", offset: "-430px", css_class: "cloud-1", delay: 1.4},
     {top: "5445", offset: "330px", css_class: "cloud-2", delay: .8},
     {top: "5629", offset: "-430px", css_class: "cloud-4", delay: .5},
-    {top: "5629", offset: "-430px", css_class: "cloud-2", delay: .1}
+    {top: "5629", offset: "330px", css_class: "cloud-2", delay: .1}
   ];
 
   var zoneControllers = {
@@ -212,6 +212,12 @@ $(document).ready(function() {
 
   var animationHandler = function(e) {
     var scrollTop = $(this).scrollTop();
+    console.log("window");
+    console.log($(window).height());
+    console.log("doc");
+    console.log($(document).height());
+    console.log("width");
+    console.log($(document).width());
     var isMovingDown = scrollTop > lastScrollTop;
     var isMovingUp = !isMovingDown;
     var scrollBottom = $(document).height() - scrollTop - $(window).height();
@@ -219,15 +225,12 @@ $(document).ready(function() {
     var marginTopArrival = -HIDDEN_HEIGHT_AT_ARRIVAL;
     var marginTopFlying = maxBalloons < 1 ? -((1 - maxBalloons) * 940) : 0;
     var marginTopDeparture = -((1 - maxBalloons) * 940);
-
     var isReturningToArrivalPoint = scrollTop < 30 && isMovingUp;
     var isArriving = scrollTop > 30 && isMovingDown;
     var isDeparturing = scrollBottom < 30 && isMovingDown;
     var isLeavingDeparturePoint = scrollBottom > 30 && isMovingUp;
-
     var flagOffset = scrollTop + parseInt($balloon.css('margin-top'));
     var basketOffset = flagOffset + 940;
-
     var edgePoint = isMovingUp ? flagOffset + RAISE_THRESHOLD : basketOffset - DESCENT_THRESHOLD;
 
     $.each(zones, function(index, zone) {
@@ -246,7 +249,15 @@ $(document).ready(function() {
     if (atArrival && isArriving) {
       atArrival = false;
       $balloon.removeClass('soaring').addClass('rocking');
-      $balloon.animate({"margin-top": marginTopFlying + 'px'}, 1000);
+      if ($(document).width() < 1030 && $(window).height() < 744) {
+        $balloon.animate({"margin-top": (marginTopFlying+1100) + 'px'}, 1000);
+      } else if ($(document).width() < 1030 && $(document).width() > 1023 && $(window).height() > 764 && $(window).height() < 770) {
+        $balloon.animate({"margin-top": (marginTopFlying+50) + 'px'}, 1000);
+      } else if ($(document).width() < 1030 && $(window).height() >= 744 && $(window).height() < 1025) {
+        $balloon.animate({"margin-top": (marginTopFlying+400) + 'px'}, 1000);
+      } else {
+        $balloon.animate({"margin-top": marginTopFlying + 'px'}, 1000);
+      }
       setTimeout(function() {
         $balloon.removeClass('rocking').addClass('soaring');
       }, 2000);

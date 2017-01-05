@@ -1067,6 +1067,16 @@ html.no-touch nav ul li:hover {
   }
 }
 
+
+.header-ul-bottom.desktop {
+  display: none;
+}
+
+.header-ul-bottom.mobile {
+  margin-top: 30px;
+  font-size: 3.5em;
+}
+
 @media (min-width:320px)  { 
   .header-ul-top {
     float: right;
@@ -1074,7 +1084,7 @@ html.no-touch nav ul li:hover {
     list-style: circle;
     font-family: "Sreda", "Georgia", "Times New Roman", serif;
     font-size: 1.0em;
-}
+  }
 }
 @media (min-width:481px)  { 
   .header-ul-top {
@@ -1083,7 +1093,7 @@ html.no-touch nav ul li:hover {
     list-style: circle;
     font-family: "Sreda", "Georgia", "Times New Roman", serif;
     font-size: 1.0em;
-}
+  }
 }
 @media (min-width:641px)  { 
   .header-ul-top {
@@ -1092,7 +1102,15 @@ html.no-touch nav ul li:hover {
     list-style: circle;
     font-family: "Sreda", "Georgia", "Times New Roman", serif;
     font-size: 1.0em;
-}
+  }
+
+  .header-ul-bottom.mobile {
+    display: none;
+  }
+
+  .header-ul-bottom.desktop {
+    display: block;
+  }
 }
 @media (min-width:961px)  { 
   .header-ul-top {
@@ -1101,7 +1119,19 @@ html.no-touch nav ul li:hover {
     list-style: circle;
     font-family: "Sreda", "Georgia", "Times New Roman", serif;
     font-size: 1.0em;
-}
+  }
+
+  .header-ul-bottom.mobile {
+    display: none;
+  }
+
+  .header-ul-bottom.desktop {
+    display: block;
+    margin-left: 50px;
+    list-style: circle;
+    font-family: "Sreda", "Georgia", "Times New Roman", serif;
+    font-size: 1.4em;
+  }
 }
 @media (min-width:1025px) { 
   .header-ul-top {
@@ -1110,7 +1140,15 @@ html.no-touch nav ul li:hover {
     list-style: circle;
     font-family: "Sreda", "Georgia", "Times New Roman", serif;
     font-size: 1.0em;
-}
+  }
+
+  .header-ul-bottom.mobile {
+    display: none;
+  }
+
+  .header-ul-bottom.desktop {
+    display: block;
+  }
 }
 @media (min-width:1281px) { 
   .header-ul-top {
@@ -1119,5 +1157,13 @@ html.no-touch nav ul li:hover {
     list-style: circle;
     font-family: "Sreda", "Georgia", "Times New Roman", serif;
     font-size: 1.0em;
-}
+  }
+
+  .header-ul-bottom.mobile {
+    display: none;
+  }
+
+  .header-ul-bottom.desktop {
+    display: block;
+  }
 }
