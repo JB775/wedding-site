@@ -212,12 +212,12 @@ $(document).ready(function() {
 
   var animationHandler = function(e) {
     var scrollTop = $(this).scrollTop();
-    console.log("window");
-    console.log($(window).height());
-    console.log("doc");
-    console.log($(document).height());
-    console.log("width");
-    console.log($(document).width());
+    // console.log("window");
+    // console.log($(window).height());
+    // console.log("doc");
+    // console.log($(document).height());
+    // console.log("width");
+    // console.log($(document).width());
     var isMovingDown = scrollTop > lastScrollTop;
     var isMovingUp = !isMovingDown;
     var scrollBottom = $(document).height() - scrollTop - $(window).height();
