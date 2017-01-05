@@ -1,0 +1,76 @@
+/* Custom Bootstrap Changes */
+
+/* Header */
+.navbar, .navbar-fixed-top {
+  color: #ae6e6e;
+  background-color: black;
+  border-bottom: 0.5px solid #ae6e6e;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #ae6e6e;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #f8f8f8;
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color: #ae6e6e;
+}
+
+.navbar:hover, .navbar-inverse:hover, .navbar-fixed-top:hover, .navbar-inverse .navbar-nav>li>a:hover {
+  color: #955454;
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+  background-color: #ae6e6e;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover{
+  background-color: #955454;
+  color: #f3f3f3;
+}
+
+.jumbotron {
+  background-color: #f8f8f8;
+}
+
+@media (min-width:320px)  { 
+  .btn-amazon, .btn-macys {
+    zoom: 0.4;
+    -moz-transform: scale(0.4)
+  }
+}
+@media (min-width:481px)  { 
+  .btn-amazon, .btn-macys {
+    zoom: 0.5;
+    -moz-transform: scale(0.5)
+  }
+}
+@media (min-width:641px)  { 
+  .btn-amazon, .btn-macys {
+    zoom: 0.6;
+    -moz-transform: scale(0.6)
+  }
+}
+@media (min-width:961px)  { 
+  .btn-amazon, .btn-macys {
+    zoom: 0.7;
+    -moz-transform: scale(0.7)
+  }
+}
+@media (min-width:1025px) { 
+  .btn-amazon, .btn-macys {
+    zoom: 0.9;
+    -moz-transform: scale(0.9)
+  }
+}
+@media (min-width:1281px) { 
+  .btn-amazon, .btn-macys {
+    zoom: 1.0;
+    -moz-transform: scale(1.0)
+  }
+}
+
+
