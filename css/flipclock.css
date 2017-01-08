@@ -37,7 +37,7 @@
 
 /* Main */
 .flip-clock-wrapper {
-  font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
+  font: normal 11px "HelveticaNeue-light", Helvetica, sans-serif;
   -webkit-user-select: none;
    }
 
@@ -159,7 +159,7 @@
   text-align: center;
   background-color: #333;
   border-radius: 6px;
-  font-size: 70px; }
+  font-size: 60px; }
 
 .flip-clock-wrapper ul li a div.up div.inn {
   top: 0; }
@@ -439,13 +439,13 @@
 @media (min-width:320px)  { 
   .clock, .balloon-wrapper {
     zoom: 0.4;
-    -moz-transform: scale(0.4)
+    -moz-transform: scale(0.3)
   }
 }
 @media (min-width:481px)  { 
   .clock, .balloon-wrapper {
     zoom: 0.5;
-    -moz-transform: scale(0.5)
+    -moz-transform: scale(0.4)
   }
 }
 @media (min-width:641px)  { 
