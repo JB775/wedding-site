@@ -43,7 +43,7 @@ var MeetingZone = function($element) {
   }
 
   this.moveOut = function() {
-    $.each($text, animationMethods.slideBackToTheSide());
+    // $.each($text, animationMethods.slideBackToTheSide());
     $meeting.animate({opacity: 0.0}, 'quick');
   }
 }
@@ -60,8 +60,8 @@ var InLoveZone = function($element) {
   }
 
   this.moveOut = function() {
-    $.each($text, animationMethods.slideBackToTheSide());
-    $.each($lovers, animationMethods.slideBackToTheSide());
+    // $.each($text, animationMethods.slideBackToTheSide());
+    // $.each($lovers, animationMethods.slideBackToTheSide());
   }
 }
 
@@ -84,9 +84,9 @@ var StormZone = function($element) {
 
   this.moveOut = function() {
     $lightning.hide();
-    $([$dominant_cloud, $left_cloud]).each(animationMethods.slideBackToTheSide());
-    $right_cloud.each(animationMethods.slideBackToTheSide());
-    $text.each(animationMethods.slideBackToTheSide());
+    // $([$dominant_cloud, $left_cloud]).each(animationMethods.slideBackToTheSide());
+    // $right_cloud.each(animationMethods.slideBackToTheSide());
+    // $text.each(animationMethods.slideBackToTheSide());
   }
 }
 
@@ -100,7 +100,7 @@ var MoveInZone = function($element) {
   }
 
   this.moveOut = function() {
-    $text.each(animationMethods.slideBackToTheSide());
+    // $text.each(animationMethods.slideBackToTheSide());
   }
 }
 
@@ -114,7 +114,7 @@ var ProposalZone = function($element) {
   }
 
   this.moveOut = function() {
-    $text.each(animationMethods.slideBackToTheSide());
+    // $text.each(animationMethods.slideBackToTheSide());
   }
 }
 
@@ -128,7 +128,7 @@ var MarriageZone = function($element) {
   }
 
   this.moveOut = function() {
-    $text.each(animationMethods.slideBackToTheSide());
+    // $text.each(animationMethods.slideBackToTheSide());
   }
 }
 

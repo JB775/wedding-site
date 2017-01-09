@@ -603,6 +603,15 @@ html.no-touch nav ul li:hover {
   background: url('../img/slowpoke.png') no-repeat;
 }
 
+#slowpoke-cat {
+  position: absolute;
+  right: 100px;
+  top: 40%;
+  width: 118px;
+  height: 243px;
+  background: url('../img/slowpoke-cat.png') no-repeat;
+}
+
 .lightning {
   width: 52px;
   height: 248px;
@@ -880,6 +889,10 @@ html.no-touch nav ul li:hover {
   }
   #slowpoke {
     background-image: url('../img/slowpoke@2x.png');
+    background-size: 116px 241px;
+  }
+  #slowpoke-cat {
+    background-image: url('../img/slowpoke-cat@2x.png');
     background-size: 116px 241px;
   }
 }
