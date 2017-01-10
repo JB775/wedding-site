@@ -249,13 +249,31 @@ $(document).ready(function() {
     if (atArrival && isArriving) {
       atArrival = false;
       $balloon.removeClass('soaring').addClass('rocking');
-      if ($(document).width() < 1030 && $(window).height() < 744) {
-        $balloon.animate({"margin-top": (marginTopFlying+1100) + 'px'}, 1000);
-      } else if ($(document).width() < 1030 && $(document).width() > 1023 && $(window).height() > 764 && $(window).height() < 770) {
+      if ($(document).width() < 1050 && $(document).width() > 1010 && $(window).height() > 670 && $(window).height() < 780) {
+        console.log("first");
+        console.log($(document).width());
+        console.log($(window).height());
         $balloon.animate({"margin-top": (marginTopFlying+50) + 'px'}, 1000);
       } else if ($(document).width() < 1030 && $(window).height() >= 744 && $(window).height() < 1025) {
+        console.log("second");
+        console.log($(document).width());
+        console.log($(window).height());
         $balloon.animate({"margin-top": (marginTopFlying+400) + 'px'}, 1000);
+
+      } else if ($(document).width() < 1030 && $(window).height() < 500) {
+        $balloon.animate({"margin-top": (marginTopFlying + 50) + 'px'}, 1000);
+        console.log("third");
+        console.log($(document).width());
+        console.log($(window).height());
+      } else if ($(document).width() < 1030 && $(window).height() < 744) {
+        console.log("fourth");
+        console.log($(document).width());
+        console.log($(window).height());
+        $balloon.animate({"margin-top": (marginTopFlying+1090) + 'px'}, 1000);
       } else {
+        console.log("fifth");
+        console.log($(document).width());
+        console.log($(window).height());
         $balloon.animate({"margin-top": marginTopFlying + 'px'}, 1000);
       }
       setTimeout(function() {
