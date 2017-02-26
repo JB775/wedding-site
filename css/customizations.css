@@ -36,6 +36,24 @@
   background-color: #f8f8f8;
 }
 
+#macys-span a {
+  color: #e70000;
+  text-decoration: none;
+}
+
+#amazon-span a {
+  color: #ff9900;
+  text-decoration: none;
+}
+
+#macys-span a:hover, #macys-span a:visited, #macys-span a:active {
+  color: #e70000;
+}
+
+#amazon-span a:hover, #amazon-span a:visited, #amazon-span a:active {
+  color: #ff9900;
+}
+
 @media (min-width:320px)  { 
   .btn-amazon, .btn-macys {
     zoom: 0.4;
