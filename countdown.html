@@ -73,7 +73,7 @@
       <p style="font-size: 0.85em; font-family: HelveticaNeue-light;">Brittany & John's Wedding &hearts; 2017 <span style="float: right;">Site Built by John</span></p>
     </footer>
   </div>
-
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -84,10 +84,9 @@
       // Grab the current date
       var currentDate = new Date();
       // Project Due Date - year, month(zero indexed), day(one indexed), hours(one indexed), minutes(one indexed), seconds, milliseconds
-      var futureDate  = new Date(2017, 7, 18, 17, 30, 0);
+      var futureDate  = new Date(2017, 7, 18, 17, 40, 0);
       // Calculate the difference in seconds between the future and current date
       var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
-      console.log(diff);
       if (diff <= 0) {
         console.log("Married!");
         // Instantiate a countdown FlipClock
@@ -95,6 +94,7 @@
           clockFace: 'DailyCounter',
           countdown: true
         });
+        $('.flip-clock-wrapper-big').prepend("<br><h1>We're Married!!!</h1><br><br><br>");
       } else {
         // Instantiate a future countdown FlipClock
         clock = $('.clock').FlipClock(diff, {
