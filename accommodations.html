@@ -99,7 +99,7 @@
             <a href="countdown.html">Countdown</a>
           </li>
         </ul>
-      </div><!--/.navbar-collapse -->
+      </div>
     </div>
   </div>
   <div class="jumbotron">
@@ -224,7 +224,6 @@
         for (i = 0; i < markerArray.length; i++) {
           markerArray[i].setMap(null);
         }
-
         // Retrieve the start and end locations and create
         // a DirectionsRequest using WALKING directions.
         var start = hotelWalkingLatLng;
@@ -234,7 +233,6 @@
             destination: end,
             travelMode: 'WALKING'
         };
-
         // Route the directions and pass the response to a
         // function to create markers for each step.
         directionsService.route(request, function(response, status) {
@@ -260,7 +258,6 @@
             markerArray[i] = marker;
         }
       }
-
       calcRoute();
     }
   </script>
